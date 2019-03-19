@@ -1,33 +1,71 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<charset = "UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
 <title>Games</title>
 <link href="CSS/webStyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<nav>
-	<div class="navbar">
-	<head1>Cindy Prentice</head1>
-  <a href="contact.html" title = "Contact">Contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">Projects
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="projects.html" title="Overview">Overview</a>
-			<a href="games.html"title="Games">Games</a>
-      <a href="programs.html" title= "Programs">Programs</a>
-      <a href="artwork.html" title="Artwork">Artwork</a>
-			<a href="writing.html" title="Writing">Writing</a>
-    </div>
-  </div>
-  	<a href="about.html" title="About">About</a>
-	<a href="index.html" title="Home">Home</a>
-</div>
-</nav>
+	<nav>
+		<div class="navbar" id="myTopnav">
+			<head1>Cindy Prentice</head1>
+			<a href="contact.html" title = "Contact">CONTACT</a>
+	  	<div class="dropdown">
+	    	<button class="dropbtn">PROJECTS
+	      	<i class="fa fa-caret-down"></i>
+	    	</button>
+	    	<div class="dropdown-content">
+					<a href="games.html"title="Games">GAMES</a>
+	      	<a href="programs.html" title= "Programs">PROGRAMS</a>
+	      	<a href="artwork.html" title="Artwork">ARTWORK</a>
+					<a href="writing.html" title="Writing">WRITING</a>
+	    	</div>
+	  	</div>
+			<a href="about.html" title="About">ABOUT</a>
+			<a href="index.html" title="Home">HOME</a>
+			<a href="javascript:void(0);" style= "font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
 <div class = "content">
-  <p>Games Page</p>
+  <phead>Games</phead>
+	<p>Below are some key examples of games I led or heavily assisted in working on.</p>
+	<p>OwlQuest is a cute, family-friendly strategic game where you collect various resources on the board to complete enough
+		quests to win the game before other players can. This game was completed in a group of four, where my main contributions
+		were in the wireframe, flowcharting and general game design, and Unity coding as well as more minor contributions to style. </p>
+	<img src="photos/Owlquest.jpg" alt="Owlquest prototype" width="400px" height='300px'>
+		<img src="photos/Wireframe.PNG" alt="Owlquest wireframe" width="400px" height='300px'>
+	<p>Greedy Midas is a two-player competitive game where each player wants to claim over half of the rooms on the board before
+		the other. This game is currently being made with one other person, and I led this project. The first few prototypes are
+		compete, and is being coded to Unity.</p>
+	<img src="photos/Midas.jpg" alt="Midas prototype" width="400px" height='300px'>
+	<img src="photos/keys.PNG" alt="Midas key cards" width="500px" height='200px'>
+	<img src="photos/midasCode.PNG" alt="Midas code snippet" width="200px" height='200px'>
+	<p>1861: Life on the Battlefield was an ambitious analog strategy board game made in my Game Design class with two other people.
+		One player controls four civilians and the other controls one soldier, and the goal of the game is to survive 15 rounds. While
+		it may be advantageous to be cooperative, the game is meant to be very difficult to survive so the players may turn on eachother
+	to get the resources they need.</p>
+	<img src="photos/board.png" alt="1861 board" width="300px" height='300px'>
+	<img src="photos/tracker.PNG" alt="1861 tracker" width="500px" height='300px'>
+	<embed src="photos/rulebook.pdf" type="application/pdf"   height="500px" width="900px">
+
+	<p>Joker 28 was a challenge to make any game you can think of within an hour given a box with playing cards, dice, and various other
+		 trinkets that you can opt to use. Joker 28 is a short-round deception game where the "joker" wants to stop the players from reaching
+		  28 points by the time they run out of cards.</p>
+	<embed src="photos/Joker28.pdf" type="application/pdf"   height="500px" width="900px">
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
 </body>
 </html>

@@ -1,33 +1,55 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<charset = "UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>About</title>
 <link href="CSS/webStyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<nav>
-	<div class="navbar">
-	<head1>Cindy Prentice</head1>
-  <a href="contact.html" title = "Contact">Contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">Projects
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="projects.html" title="Overview">Overview</a>
-			<a href="games.html"title="Games">Games</a>
-      <a href="programs.html" title= "Programs">Programs</a>
-      <a href="artwork.html" title="Artwork">Artwork</a>
-			<a href="writing.html" title="Writing">Writing</a>
-    </div>
-  </div>
-  	<a href="about.html" title="About">About</a>
-	<a href="index.html" title="Home">Home</a>
-</div>
-</nav>
+	<nav>
+		<div class="navbar" id="myTopnav">
+			<head1>Cindy Prentice</head1>
+			<a href="contact.html" title = "Contact">CONTACT</a>
+	  	<div class="dropdown">
+	    	<button class="dropbtn">PROJECTS
+	      	<i class="fa fa-caret-down"></i>
+	    	</button>
+	    	<div class="dropdown-content">
+					<a href="games.html"title="Games">GAMES</a>
+	      	<a href="programs.html" title= "Programs">PROGRAMS</a>
+	      	<a href="artwork.html" title="Artwork">ARTWORK</a>
+					<a href="writing.html" title="Writing">WRITING</a>
+	    	</div>
+	  	</div>
+			<a href="about.html" title="About">ABOUT</a>
+			<a href="index.html" title="Home">HOME</a>
+			<a href="javascript:void(0);" style= "font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
 <div class = "content">
-<p>Artwork page</p>
+	<img1>
+	<img src="photos/aerialUW.jpg" alt ="UW Photo" float="right" style="opacity:0.7;filter:alpha(opacity=70);">
+			<p float='left'>(Photo by Jeff Miller/UW-Madison)</p>
+	</img1>
+<div class="examplebox">
+	<p>I am a Computer Science B.S. student at the University of Wisonsin-Madison graduating with my degree in May of 2019.</p>
+	<p>During my time in College I was an officer in both the UW-Madison Game Design and Development Club and the Madison Student Chapter of The Institute of Electrical and Electronics Engineers (IEEE). My duties included Email and Communications with club members and speakers, finance and fundraising responsibilites, assisting club members in projects, and other club maintainence duties. I learned a lot about the design and development process during this time and made multiple prototypes and fleshed some out into full games.</p>
+	<p>Besides my passion for game design, coding, and writing, other hobbies include singing solos and in choirs, competitive three-event and show-ski waterskiing, playing board games and D&D with friends, and baking pies.</p>
 </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
 </body>
 </html>

@@ -1,33 +1,53 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<charset = "UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Writing</title>
 <link href="CSS/webStyle.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-<nav>
-	<div class="navbar">
-	<head1>Cindy Prentice</head1>
-  <a href="contact.html" title = "Contact">Contact</a>
-  <div class="dropdown">
-    <button class="dropbtn">Projects
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="projects.html" title="Overview">Overview</a>
-			<a href="games.html"title="Games">Games</a>
-      <a href="programs.html" title= "Programs">Programs</a>
-      <a href="artwork.html" title="Artwork">Artwork</a>
-			<a href="writing.html" title="Writing">Writing</a>
-    </div>
-  </div>
-  	<a href="about.html" title="About">About</a>
-	<a href="index.html" title="Home">Home</a>
-</div>
-</nav>
+	<nav>
+		<div class="navbar" id="myTopnav">
+			<head1>Cindy Prentice</head1>
+			<a href="contact.html" title = "Contact">CONTACT</a>
+	  	<div class="dropdown">
+	    	<button class="dropbtn">PROJECTS
+	      	<i class="fa fa-caret-down"></i>
+	    	</button>
+	    	<div class="dropdown-content">
+					<a href="games.html"title="Games">GAMES</a>
+	      	<a href="programs.html" title= "Programs">PROGRAMS</a>
+	      	<a href="artwork.html" title="Artwork">ARTWORK</a>
+					<a href="writing.html" title="Writing">WRITING</a>
+	    	</div>
+	  	</div>
+			<a href="about.html" title="About">ABOUT</a>
+			<a href="index.html" title="Home">HOME</a>
+			<a href="javascript:void(0);" style= "font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</nav>
 <div class = "content">
-  <p>Writing Page</p>
+  <phead>Writing</phead>
+	<p>During my college career, I've taken five separate creative writing workshops and wrote 20+ pieces of fiction. I have written in and am confortable with both script and novel formats.
+		I have also written pieces outside of my education. One piece, Millstone of Matratol, currently has 25,000 words and is being fleshed out into a novel. Below are a few key examples of my work:</p>
+		<p>BioShock Infinite Research Paper: Paper analyzing the ability to teach historical events and inequities through Bioshock Infinite.</p>
+		<embed src="photos/Bioshock.pdf" type="application/pdf"   height="500px" width="100%">
+	<p>Morphs: Playwrite format. A mystery in a snake breeding facility.</p>
+	<embed src="photos/Morphs.pdf" type="application/pdf"   height="500px" width="100%">
 </div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
 </body>
 </html>
